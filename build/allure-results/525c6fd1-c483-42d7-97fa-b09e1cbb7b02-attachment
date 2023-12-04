@@ -1,0 +1,2 @@
+[2023-12-04T15:45:12.468Z] [WARNING] https://www.demoblaze.com/node_modules/video.js/dist/video.min.js 11:694 "VIDEOJS:" "WARN:" "A plugin named \"reloadSourceOnError\" already exists. You may want to avoid re-registering plugins!"
+[2023-12-04T15:45:12.650Z] [SEVERE] https://www.demoblaze.com/node_modules/video.js/dist/video.min.js 11:694 "VIDEOJS:" "ERROR:" "(CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED)" "No compatible source was found for this media." yt
