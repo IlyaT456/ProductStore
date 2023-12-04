@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class BaseSteps {
 
-    public String NAME = "User123user1234";
+    public String NAME = "User123user1235";
 
     Pages page = new Pages();
 

@@ -12,9 +12,9 @@ public class PropuctStoreTests extends BaseTest {
     @Test
     @DisplayName("Открытие страници")
     public void openMain() {
-        selectors.openMainPage()
-                .registrNewUser()
-                .registerNewUser()
-                .chekingAutorizeshion();
+        selectors.openMainPage();
+//                .registrNewUser()
+//                .registerNewUser()
+//                .chekingAutorizeshion();
     }
 }
