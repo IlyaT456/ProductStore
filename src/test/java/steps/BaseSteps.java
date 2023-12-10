@@ -8,7 +8,10 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class BaseSteps {
 
-    public String NAME = "User123user1235";
+    private String NAME = "User123user123";
+    private String AUTHORIZATION = "sign-";
+    private String LOGIN = "login";
+
 
     Pages page = new Pages();
 
@@ -18,9 +21,23 @@ public class BaseSteps {
         return this;
     }
 
-    @Step("Регигастрация нового пользователя")
-    public BaseSteps registrNewUser() {
-        page.signUp().click();
+    @Step("Кликаем на кнопку регистрации")
+    public BaseSteps clickButtonSignUp() {
+        page.buttonSignUp().click();
+        return this;
+    }
+
+    @Step("Кликаем на кнопку авторизации")
+    public BaseSteps clickButtonLogin() {
+        page.buttonLogIn().click();
+        return this;
+    }
+
+    @Step("Регистрация нового пользователя")
+    public BaseSteps userLogIn() {
+        page.userName(LOGIN).setValue(NAME);
+        page.password(LOGIN).setValue(NAME);
+        page.buttonLog().click();
         return this;
     }
 
@@ -31,9 +48,9 @@ public class BaseSteps {
 
     @Step("Регистрация нового пользователя")
     public BaseSteps registerNewUser() {
-        page.userName().setValue(NAME);
-        page.password().setValue(NAME);
-        page.button().click();
+        page.userName(AUTHORIZATION).setValue(NAME);
+        page.password(AUTHORIZATION).setValue(NAME);
+        page.buttonSignUp().click();
         return this;
     }
 
@@ -42,4 +59,6 @@ public class BaseSteps {
         page.hederMainUser().shouldHave(text(NAME));
         return this;
     }
+
+
 }

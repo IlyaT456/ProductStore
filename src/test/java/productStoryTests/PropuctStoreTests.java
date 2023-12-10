@@ -10,11 +10,11 @@ public class PropuctStoreTests extends BaseTest {
     BaseSteps selectors = new BaseSteps();
 
     @Test
-    @DisplayName("Открытие страници")
+    @DisplayName("Авторизация")
     public void openMain() {
-        selectors.openMainPage();
-//                .registrNewUser()
-//                .registerNewUser()
-//                .chekingAutorizeshion();
+        selectors.openMainPage()
+                .clickButtonLogin()
+                .userLogIn()
+                .chekingAutorizeshion();
     }
 }

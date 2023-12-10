@@ -39,7 +39,11 @@ dependencies {
             'io.qameta.allure:allure-selenide:2.22.2',
             'org.selenide:selenide-selenoid:2.3.5',
             "org.assertj:assertj-core:3.24.2",
+            'io.rest-assured:rest-assured:5.4.0',
+            group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.15.2'
     )
+    testImplementation 'org.projectlombok:lombok:1.18.22'
+    compileOnly 'org.projectlombok:lombok:1.18.24'
 }
 
 test {
