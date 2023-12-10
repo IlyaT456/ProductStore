@@ -26,7 +26,6 @@
 .allure/
 .gradle/
 gradle/
-build/
 bin/
 out/
 logs/
